@@ -27,7 +27,7 @@ TimeLimitedCache.prototype.set = function (key, value, duration) {
 
 /** 
  * @param {number} key
- * @return {number} value associated with key
+// //  * @return {number} value associated with key
  */
 TimeLimitedCache.prototype.get = function (key) {
     return this.cache[key] ? this.cache[key].value : -1
