@@ -2,7 +2,7 @@ const reduce = (arr, callback, initValue) => {
     let acc = (initValue === undefined ? arr[0] : initValue);
 
     let startIndex = (initValue === undefined ? 1 : 0);
-    
+
     for (let i = startIndex; i < arr.length; i++) {
         acc = callback(acc, arr[i], i, arr)
     }
